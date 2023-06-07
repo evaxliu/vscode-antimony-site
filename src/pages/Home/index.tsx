@@ -1,6 +1,6 @@
 import { lazy } from "react";
 import IntroContent from "../../content/IntroContent.json";
-import MiddleBlockContent from "../../content/MiddleBlockContent.json";
+import InstructContent from "../../content/InstructContent.json";
 import AboutContent from "../../content/AboutContent.json";
 import ContactContent from "../../content/ContactContent.json";
 import InstrucBlock from "../../components/InstrucBlock";
@@ -23,9 +23,9 @@ const Home = () => {
         id="intro"
       />
       <MiddleBlock
-        title={MiddleBlockContent.title}
-        content={MiddleBlockContent.text}
-        button={MiddleBlockContent.button}
+        title={InstructContent.title}
+        content={InstructContent.text}
+        button={InstructContent.button}
         id="about"
       />
       <InstrucBlock
