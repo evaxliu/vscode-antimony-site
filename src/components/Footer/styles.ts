@@ -9,7 +9,7 @@ export const FooterSection = styled("footer")`
 export const Title = styled("h4")`
   font-size: 22px;
   text-transform: capitalize;
-  color: #18216d;
+  color: #59b2e2;
 
   @media screen and (max-width: 414px) {
     padding: 1.5rem 0;
@@ -25,7 +25,7 @@ export const NavLink = styled(Link)`
   &:hover,
   &:active,
   &:focus {
-    color: #15418e;
+    color: #59b2e2;
   }
 `;
 
@@ -44,14 +44,14 @@ export const LogoContainer = styled("div")`
 `;
 
 export const Para = styled("div")`
-  color: #18216d;
+  color: #59b2e2;
   font-size: 14px;
   width: 70%;
 `;
 
 export const Large = styled(Link)<any>`
   font-size: 16px;
-  color: #000;
+  color: #478eb5;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-transform: capitalize;
@@ -62,23 +62,23 @@ export const Large = styled(Link)<any>`
   max-width: max-content;
 
   &:hover {
-    color: rgb(255, 130, 92);
+    color: #59b2e2;
     text-underline-position: under;
-    text-decoration: rgb(255, 130, 92) wavy underline;
+    text-decoration: #59b2e2 underline;
   }
 `;
 
 export const Chat = styled("p")`
-  color: #18216d;
+  color: #59b2e2;
   max-width: fit-content;
-  border-bottom: 1px solid #18216d;
   cursor: pointer;
   margin-top: 1rem;
   transition: all 0.3s ease-in-out;
+  text-underline-position: under;
+  text-decoration: #59b2e2 underline;
 
   &:hover {
-    border-bottom: 1px solid rgb(255, 130, 92);
-    color: rgb(255, 130, 92);
+    color: #59b2e2;
   }
 `;
 
@@ -121,7 +121,7 @@ export const FooterContainer = styled("div")`
     height: 25px;
 
     &:hover {
-      fill: rgb(255, 130, 92);
+      fill: #59b2e2;
     }
   }
 `;

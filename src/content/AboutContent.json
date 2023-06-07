@@ -3,14 +3,16 @@
   "text": "Windows Install | Mac Install | Linux Install",
   "section": [
     {
-      "title": "Why Antd?",
-      "content": "Ant Design is a React UI library that has a lot of easy-to-use components for building elegant UI.",
-      "icon": "notes.svg"
+      "title": "Windows Install",
+      "content": "Ant Design is a React UI library that has a lot of easy-to-use components for building elegant UI."
     },
     {
-      "title": "Why styled-components?",
-      "content": "Styled Components gives you total control over your components.",
-      "icon": "notes.svg"
+      "title": "Mac Install",
+      "content": "Styled Components gives you total control over your components."
+    },
+    {
+      "title": "Linux Install",
+      "content": "Styled Components gives you total control over your components."
     }
   ]
 }

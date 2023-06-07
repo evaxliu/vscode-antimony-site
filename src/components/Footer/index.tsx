@@ -64,7 +64,7 @@ const Footer = ({ t }: any) => {
               </Large>
               <Large left="true" to="/">
                 {t("Software Principles")}
-              </Large>`
+              </Large>
             </Col>
           </Row>
           <Row justify="space-between">

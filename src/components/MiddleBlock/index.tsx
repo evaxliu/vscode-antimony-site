@@ -27,7 +27,6 @@ const MiddleBlock = ({
   };
   return (
     <MiddleBlockSection>
-      <Slide direction="up">
         <Row justify="center" align="middle" id={id}>
           <ContentWrapper>
             <Col lg={24} md={24} sm={24} xs={24}>
@@ -41,7 +40,6 @@ const MiddleBlock = ({
             </Col>
           </ContentWrapper>
         </Row>
-      </Slide>
     </MiddleBlockSection>
   );
 };
