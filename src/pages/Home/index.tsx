@@ -23,16 +23,16 @@ const Home = () => {
         id="intro"
       />
       <MiddleBlock
-        title={InstructContent.title}
-        content={InstructContent.text}
-        button={InstructContent.button}
+        title={AboutContent.title}
+        content={AboutContent.text}
+        button={AboutContent.button}
         id="about"
       />
       <InstrucBlock
-        title={AboutContent.title}
-        content={AboutContent.text}
-        section={AboutContent.section}
-        button=""
+        title={InstructContent.title}
+        content={InstructContent.text}
+        section={InstructContent.section}
+        button="Next Steps for All 3 Operating Systems"
         id="instructions"
       />
       <Contact

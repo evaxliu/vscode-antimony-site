@@ -1,7 +1,21 @@
 {
-    "title": "Why Vscode-Antimony?",
-    "text": "Antimony is a human-readable, human-writable modular model definition language. The Antimony modeling language provides a way to construct human readable models for Systems Biology that can be exported into the SBML community format. As models become more complex, it is desirable to have a model development environment that understands the syntax and semantics of the modeling language so as to reduce the amount of typing and to provide early detection of syntax errors and inconsistencies. Such capabilities are widely used in software development environments such as Microsoft’s Visual Studio Code. For example, when writing Python source code, VSCode provides linting (static code analysis), code navigation, refactoring, and more. We are unaware of tools that provide similar capabilities for the development of SBML models. Vscode-antimony provides “smart editor” features for building Antimony models. The tool is implemented as a language support library in Visual Studio Code. Vscode-antimony provides syntax recognition, highlights, hover messages for displaying information (e.g., display name, annotation link, initialized value), code navigation for locating the line of declaration, and convenient annotations with commonly used knowledge sources (e.g., ChEBI and UniProt). In addition, there is support for detecting errors and likely errors (warnings). For example, vscode-antimony displays an error when the user tries to call a function that has not been declared (most likely from a typographical error), and a warning is displayed if there is no initialization of a declared species. Further, vscode-antimony makes it convenient to work simultaneously with the Antimony and the Systems Biology Markup Language (SBML) representations of models by providing a split-screen editing capability with synchronization between the representations.",
-    "button": "Install Instructions",
-    "icon": "win.svg"
-}
-  
+    "title": "Install Instructions",
+    "text": "Windows Install | Mac Install | Linux Install",
+    "section": [
+      {
+        "title": "Windows Install",
+        "content": "This extension requires Vscode Antimony Dependencies Installer to be installed. Your web browser may warn that this isn't a commonly installed software, allow the browser to keep the download. (Press Keep) Once installed, open the Downloads folder on your device Double click Vscode-Antimony-Dependencies-Installer to start the setup process. If there is a warning pop up from Windows, click more info and then click run anyway. (This will not intefer with any other dependencies and programs of your device). (Press more info) (Press run anyway) Once installed, restart Visual Code Studio. This extension may require Git to be installed before use. Make sure to add Git to PATH when installing. Restart Visual Studio Code after installation of Git.",
+        "icon": "win.svg"
+      },
+      {
+        "title": "Mac Install",
+        "content": "This extension requires Vscode_Antimony_Setup (Silicon CPU Macbooks) or Python 3.9.13 (Intel Macbooks)and NodeJS to be installed before use. When installing Vscode_Antimony_Setup.pkg, right click on the pkg file and press open. (Right click, then press open) Click open when the pop up appears. (Click open) When installing Python 3.9.13 and NodeJS, proceed with the installations as is. No changes are needed to be made. Once installed, restart Visual Code Studio.",
+        "icon": "mac.svg"
+      },
+      {
+        "title": "Linux Install",
+        "content": "Linux users will have to install Python3.10, NodeJS, venv python package, and pip. Once installed, restart Visual Studio Code if Visual Studio Code is already installed and opened.",
+        "icon": "linux.svg"
+      }
+    ]
+  }
