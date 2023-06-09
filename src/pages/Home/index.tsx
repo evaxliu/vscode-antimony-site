@@ -28,18 +28,18 @@ const Home = () => {
         button={AboutContent.button}
         id="about"
       />
-      <InstrucBlock
+      {/* <InstrucBlock
         title={InstructContent.title}
         content={InstructContent.text}
-        section={InstructContent.section}
-        button="Next Steps for All 3 Operating Systems"
+        section=''
+        button=""
         id="instructions"
-      />
-      <Contact
+      /> */}
+      {/* <Contact
         title={ContactContent.title}
         content={ContactContent.text}
         id="contact"
-      />
+      /> */}
     </Container>
   );
 };

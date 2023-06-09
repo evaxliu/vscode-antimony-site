@@ -1,11 +1,10 @@
 import { Row, Col } from "antd";
 import { Button } from "../../common/Button";
 import { SvgIcon } from "../../common/SvgIcon";
-import { MiddleBlockSection, Content, ContentWrapper, ServiceWrapper, MinTitle, MinPara, } from "./styles";
+import { MiddleBlockSection, Content, ContentWrapper, ServiceWrapper, MinTitle, MinPara, Empty, ServiceItem, ServiceContent, Anchor } from "./styles";
 import { withTranslation } from "react-i18next";
-import { Large } from "../Footer/styles";
 
-interface MiddleBlockProps {
+interface InstrucBlockProps {
   title: string;
   content: string;
   section: any;
@@ -14,14 +13,14 @@ interface MiddleBlockProps {
   id: string;
 }
 
-const MiddleBlock = ({ 
+const InstrucBlock = ({ 
   title, 
   content, 
   section,
   button, 
   t, 
   id,
-}: MiddleBlockProps) => {
+}: InstrucBlockProps) => {
   const scrollTo = (id: string) => {
     const element = document.getElementById(id) as HTMLDivElement;
     element.scrollIntoView({
@@ -40,29 +39,52 @@ const MiddleBlock = ({
                   {typeof section === "object" &&
                     section.map((item: any, id: number) => {
                       return (
-                        <Col key={id} span={11}>
+                      <Col key={id} span={8}>
+                        <ServiceItem>
                           <SvgIcon src={item.icon} width="60px" height="60px" />
                           <MinTitle>{t(item.title)}</MinTitle>
+                          <Anchor href={item.link}>{item.install}</Anchor><br /><br />
                           <MinPara>{t(item.content)}</MinPara>
-                        </Col>
+                        </ServiceItem>
+                        <ServiceContent>
+                          <div>
+                            <img src={item.image1} width="350px" alt="" />
+                          </div>
+                          <MinPara>{t(item.content1)}</MinPara>
+                        </ServiceContent>
+                        <ServiceContent>
+                          <div>
+                            <img src={item.image2} height="350px" alt="" />
+                          </div>
+                          <MinPara>{t(item.content2)}</MinPara>
+                        </ServiceContent>
+                        <ServiceContent>
+                          <div>
+                            <img src={item.image3} height="350px" alt="" />
+                          </div>
+                        </ServiceContent>
+                      </Col>
                       );
                     })}
                 </Row>
             </ServiceWrapper>
+            <Anchor href="https://github.com/sys-bio/vscode-antimony#features">Important Guide for Vscode-Antimony Features</Anchor>
+            {/* <Empty />
               {button && (
-                <Button name="Next Installation Steps for All 3 Operating Systems" onClick={() => scrollTo("next steps")}>
+                // <Button name="Next Installation Steps for All 3 Operating Systems" onClick={() => scrollTo("next steps")}>
+                <Button name="Next Installation Steps for All 3 Operating Systems" onClick={() => window.location.href='https://github.com/sys-bio/vscode-antimony/tree/master#steps-below-apply-for-all-operating-systems'}>
                   {t(button)}
                 </Button>
-              )}
+              )} */}
             </Col>
-            <Col lg={24} md={24} sm={24} xs={24} id="next steps">
+            {/* <Col lg={24} md={24} sm={24} xs={24} id="next steps">
               <Content>{t("Next Installation Steps for All 3 Operating Systems")}</Content>
-              <a href="https://github.com/sys-bio/vscode-antimony#features">Important Guide for Vscode-Antimony Features Here</a>
-            </Col>
+              <Anchor href="https://github.com/sys-bio/vscode-antimony#features">Important Guide for Vscode-Antimony Features</Anchor>
+            </Col> */}
           </ContentWrapper>
         </Row>
     </MiddleBlockSection>
   );
 };
 
-export default withTranslation()(MiddleBlock);
+export default withTranslation()(InstrucBlock);

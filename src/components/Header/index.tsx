@@ -27,6 +27,13 @@ const Header = ({ t }: any) => {
     setVisibility(!visible);
   };
 
+  const scrollToBottom = () => {
+    window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior: "smooth",
+    });
+  };
+
   const MenuItem = () => {
     const scrollTo = (id: string) => {
       const element = document.getElementById(id) as HTMLDivElement;
@@ -40,12 +47,12 @@ const Header = ({ t }: any) => {
         <CustomNavLinkSmall onClick={() => scrollTo("about")}>
           <Span>{t("About")}</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => scrollTo("instructions")}>
+        <CustomNavLinkSmall onClick={scrollToBottom}>
           <Span>{t("Install Instructions")}</Span>
         </CustomNavLinkSmall>
         <CustomNavLinkSmall
           style={{ width: "180px" }}
-          onClick={() => scrollTo("contact")}
+          onClick={scrollToBottom}
         >
           <Span>
             <Button>{t("Contact")}</Button>

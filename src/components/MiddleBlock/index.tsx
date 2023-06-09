@@ -33,7 +33,8 @@ const MiddleBlock = ({
               <h6>{t(title)}</h6>
               <Content>{t(content)}</Content>
               {button && (
-                <Button name="install instructions" onClick={() => scrollTo("instructions")}>
+                // <Button name="Next Installation Steps for All 3 Operating Systems" onClick={() => scrollTo("next steps")}>
+                <Button name="Install Instructions" onClick={() => window.location.href='https://github.com/sys-bio/vscode-antimony/tree/master#installation-required-1'}>
                   {t(button)}
                 </Button>
               )}

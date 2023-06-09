@@ -7,16 +7,9 @@ import i18n from "i18next";
 import {
   FooterSection,
   Title,
-  NavLink,
   Extra,
-  LogoContainer,
   Para,
-  Large,
   Chat,
-  Empty,
-  FooterContainer,
-  Label,
-  SocialContainer,
 } from "./styles";
 
 interface SocialLinkProps {
@@ -57,7 +50,7 @@ const Footer = ({ t }: any) => {
                 <Chat>{t(`Contact Us`)}</Chat>
               </a>
             </Col>
-            <Col lg={8} md={8} sm={12} xs={12}>
+            {/* <Col lg={8} md={8} sm={12} xs={12}>
               <Title>{t("Policy")}</Title>
               <Large to="/" left="true">
                 {t("Application Security")}
@@ -65,9 +58,7 @@ const Footer = ({ t }: any) => {
               <Large left="true" to="/">
                 {t("Software Principles")}
               </Large>
-            </Col>
-          </Row>
-          <Row justify="space-between">
+            </Col> */}
             <Col lg={10} md={10} sm={12} xs={12}>
               <Title>{t("Social")}</Title>
               <SocialLink
@@ -75,12 +66,14 @@ const Footer = ({ t }: any) => {
                   src="github.svg"
                 />
             </Col>
-            <Col lg={8} md={8} sm={12} xs={12}>
+          </Row>
+          <Row justify="space-between">
+            {/* <Col lg={8} md={8} sm={12} xs={12}>
               <Title>{t("Organization")}</Title>
-              <Large left="true" href="https://reproduciblebiomodels.org/">
-                {t("About")}
-              </Large>
-            </Col>
+                <Large left="true" to="https://reproduciblebiomodels.org/">
+                  {t("About")}
+                </Large>
+            </Col> */}
           </Row>
         </Container>
       </FooterSection>
