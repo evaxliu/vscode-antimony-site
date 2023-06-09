@@ -1,0 +1,13 @@
+{
+    "title": "Install Instructions",
+    "text": "Linux Install",
+    "section": [
+      {
+        "title": "Linux Install",
+        "content": "Linux users will have to install Python3.10, NodeJS, venv python package, and pip.",
+        "content1": "Once installed, restart Visual Studio Code if Visual Studio Code is already installed and opened.",
+        "content2": "", 
+        "icon": "linux.svg"
+      }
+    ]
+  }

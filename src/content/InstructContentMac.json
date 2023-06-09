@@ -1,0 +1,13 @@
+{
+    "title": "Install Instructions",
+    "text": "Mac Install",
+    "section": [
+      {
+        "title": "Mac Install",
+        "content": "This extension requires Vscode_Antimony_Setup (Silicon CPU Macbooks) or Python 3.9.13 (Intel Macbooks)and NodeJS to be installed before use. When installing Vscode_Antimony_Setup.pkg, right click on the pkg file and press open.",
+        "content1": "Click open when the pop up appears.",
+        "content2": "When installing Python 3.9.13 and NodeJS, proceed with the installations as is. No changes are needed to be made. Once installed, restart Visual Code Studio.",
+        "icon": "mac.svg"
+      }
+    ]
+  }

@@ -1,0 +1,18 @@
+{
+    "title": "Install Instructions",
+    "text": "Windows Install",
+    "section": [
+      {
+        "link": "https://github.com/sys-bio/vscode-antimony/raw/master/setup/Vscode%20Antimony%20Setup%20Installer.exe",
+        "install": "Windows Vscode Antimony Dependencies Installer (Click Here)",
+        "title": "Windows Install",
+        "content": "This extension requires Vscode Antimony Dependencies Installer to be installed. Your web browser may warn that this isn't a commonly installed software, allow the browser to keep the download.",
+        "image1": "/img/icons/windowswarning.png",
+        "content1": "Once installed, open the Downloads folder on your device Double click Vscode-Antimony-Dependencies-Installer to start the setup process. If there is a warning pop up from Windows, click more info and then click run anyway. (This will not intefer with any other dependencies and programs of your device).",
+        "image2": "/img/icons/windowspressmoreinfo.png",
+        "image3": "/img/icons/windowspressrunanyway.png",
+        "content2": "Once installed, restart Visual Code Studio. This extension may require Git to be installed before use. Make sure to add Git to PATH when installing. Restart Visual Studio Code after installation of Git.",
+        "icon": "win.svg"
+      }
+    ]
+  }
